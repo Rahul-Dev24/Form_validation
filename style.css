@@ -7,7 +7,7 @@ html,
 body{
     width: 100vw;
     height: 100vh;
-    background-color: cornflowerblue;
+    background-image : linear-gradient(to right, #ed43e1, #1146f1)
     display: flex;
     align-items: center;
     justify-content: center;
