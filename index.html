@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Details</h1>
+      <!-- <span id="span"></span> -->
+      <form
+        action="Done.html"
+        autocomplete="off"
+        onsubmit="return handleSubmite()"
+        name="myforms"
+      >
+        <input type="text" placeholder="Enter a name" name="name" id="name" />
+        <span id="name_err"></span>
+        <input type="tel" placeholder="Enter Mobile Number" name="mobileNo" />
+        <span id="phone_err"></span>
+        <input type="date" name="DOB" id="DOB" onchange="setAge()" />
+        <span id="date_err"></span>
+        <input type="number" placeholder="Age" readonly id="age" />
+        <textarea rows="2" placeholder="Address" name="address"></textarea>
+        <span id="address_err"></span>
+        <select id="" name="dest">
+          <option value="">-- Select Destrict --</option>
+          <option value="Ariyalur">Ariyalur</option>
+          <option value="Chengalpattu">Chengalpattu</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Cuddalore">Cuddalore</option>
+          <option value="Dharmapuri">Dharmapuri</option>
+          <option value="Dindigul">Dindigul</option>
+          <option value="Erode">Erode</option>
+          <option value="Kallakurichi">Kallakurichi</option>
+          <option value="Kanchipuram">Kanchipuram</option>
+          <option value="Kanyakumari">Kanyakumari</option>
+          <option value="Karur">Karur</option>
+          <option value="Krishnagiri">Krishnagiri</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Nagapattinam">Nagapattinam</option>
+          <option value="Namakkal">Namakkal</option>
+          <option value="Nilgiris">Nilgiris</option>
+          <option value="Perambalur">Perambalur</option>
+          <option value="Pudukkottai">Pudukkottai</option>
+          <option value="Ramanathapuram">Ramanathapuram</option>
+          <option value="Ranipet">Ranipet</option>
+          <option value="Salem">Salem</option>
+          <option value="Sivaganga">Sivaganga</option>
+          <option value="Tenkasi">Tenkasi</option>
+          <option value="Thanjavur">Thanjavur</option>
+          <option value="Theni">Theni</option>
+          <option value="Thoothukudi">Thoothukudi</option>
+          <option value="Tiruchirappalli">Tiruchirappalli</option>
+          <option value="Tirunelveli">Tirunelveli</option>
+          <option value="Tirupathur">Tirupathur</option>
+          <option value="Tiruppur">Tiruppur</option>
+          <option value="Tiruvallur">Tiruvallur</option>
+          <option value="Tiruvannamalai">Tiruvannamalai</option>
+          <option value="Tiruvarur">Tiruvarur</option>
+          <option value="Vellore">Vellore</option>
+          <option value="Viluppuram">Viluppuram</option>
+          <option value="Virudhunagar">Virudhunagar</option>
+        </select>
+        <span id="select_err"></span>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
